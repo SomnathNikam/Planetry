@@ -12,13 +12,12 @@ class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
-        val anim = findViewById<LottieAnimationView>(R.id.lottieanim)
+        
 
         Handler(Looper.getMainLooper()).postDelayed(Runnable {
-            anim.visibility= View.VISIBLE
-            anim.playAnimation()
+
             startActivity(Intent(this,MainActivity::class.java))
-                                                             },4000)
+                                                             },3000)
 
 
     }
